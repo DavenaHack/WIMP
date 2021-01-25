@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Interop.VirtualDesktop\MIMP.OperatingSystem.Windows.Interop.VirtualDesktop.csproj" />
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Window\MIMP.OperatingSystem.Windows.Window.csproj" />
+  </ItemGroup>
+
+</Project>
