@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Authors>Davena Hack</Authors>
+    <Company>Mimp</Company>
+    <Product>WIMP</Product>
+    <AssemblyName>WIMP</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MIMP.Input\MIMP.Input.csproj" />
+    <ProjectReference Include="..\MIMP.Log\MIMP.Log.csproj" />
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Keyboard\MIMP.OperatingSystem.Windows.Keyboard.csproj" />
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Mouse\MIMP.OperatingSystem.Windows.Mouse.csproj" />
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Window\MIMP.OperatingSystem.Windows.Window.csproj" />
+    <ProjectReference Include="..\MIMP.WIMP\MIMP.WIMP.csproj" />
+    <ProjectReference Include="..\MIMP.Window\MIMP.Window.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Converters\" />
+  </ItemGroup>
+
+</Project>

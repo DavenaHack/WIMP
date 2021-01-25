@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MIMP.Input\MIMP.Input.csproj" />
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Hook\MIMP.OperatingSystem.Windows.Hook.csproj" />
+  </ItemGroup>
+
+</Project>

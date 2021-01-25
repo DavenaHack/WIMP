@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MIMP.SeeSharper.Events\MIMP.SeeSharper.Events.csproj" />
+	  <ProjectReference Include="..\MIMP.SeeSharper\MIMP.SeeSharper.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Native\MIMP.OperatingSystem.Windows.Native.csproj" />
+    <ProjectReference Include="..\MIMP.OperatingSystem.Windows.Screen\MIMP.OperatingSystem.Windows.Screen.csproj" />
+    <ProjectReference Include="..\MIMP.Window\MIMP.Window.csproj" />
+  </ItemGroup>
+
+</Project>
