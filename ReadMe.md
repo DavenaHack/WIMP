@@ -19,6 +19,8 @@ TODO Description and examples/pics
 | Shrink right | <code>&#x229E; Windows</code> + <code>Alt</code> + <code>Shift</code> + <code>&#x21E8;</code> |
 | Shrink down | <code>&#x229E; Windows</code> + <code>Alt</code> + <code>Shift</code> + <code>&#x21E9;</code> |
 | Shrink left | <code>&#x229E; Windows</code> + <code>Alt</code> + <code>Shift</code> + <code>&#x21E6;</code> |
+| Full width | <code>&#x229E; Windows</code> + <code>&#x21E6;</code> + <code>&#x21E8;</code> |
+| Full height | <code>&#x229E; Windows</code> + <code>&#x21E7;</code> + <code>&#x21E9;</code> |
 | Screen up | <code>&#x229E; Windows</code> + <code>Shift</code> + <code>&#x21E7;</code> |
 | Screen right | <code>&#x229E; Windows</code> + <code>Shift</code> + <code>&#x21E8;</code> |
 | Screen down | <code>&#x229E; Windows</code> + <code>Shift</code> + <code>&#x21E9;</code> |
