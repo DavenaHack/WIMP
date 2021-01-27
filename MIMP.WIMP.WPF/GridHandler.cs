@@ -431,7 +431,7 @@ namespace MIMP.WIMP.WPF
                     }
                     else
                     {
-                        ns = _app.Screens.Right(pos, screen, true);
+                        ns = _app.Screens.Top(pos, screen, true);
                         if (ns != null)
                         {
                             var g = _app.Configuration.Grid(ns.ID);
@@ -524,7 +524,7 @@ namespace MIMP.WIMP.WPF
                     }
                     else
                     {
-                        ns = _app.Screens.Right(pos, screen, true);
+                        ns = _app.Screens.Down(pos, screen, true);
                         if (ns != null)
                         {
                             var g = _app.Configuration.Grid(ns.ID);
@@ -567,7 +567,7 @@ namespace MIMP.WIMP.WPF
                     }
                     else
                     {
-                        ns = _app.Screens.Right(pos, screen, true);
+                        ns = _app.Screens.Left(pos, screen, true);
                         if (ns != null)
                         {
                             var g = _app.Configuration.Grid(ns.ID);
@@ -786,30 +786,8 @@ namespace MIMP.WIMP.WPF
                 return;
             var pos = window.GetPosition();
             var screen = window.Screen;
-            var size = screen.GetWorkArea();
-            var ns = screen;
-            var d = int.MaxValue;
-            foreach (var s in _app.Screens)
-            {
-                if (s == screen)
-                    continue;
-                var sz = s.GetWorkArea();
-                if (size.Top != sz.Bottom)
-                    continue;
-                var nd = 0;
-                if (pos.Left < sz.Left)
-                    nd += sz.Left - pos.Left;
-                if (pos.Right > sz.Right)
-                    nd += pos.Right - sz.Right;
-                if (nd < d)
-                {
-                    d = nd;
-                    ns = s;
-                }
-                if (nd == 0)
-                    break;
-            }
-            if (ns == screen)
+            var ns = _app.Screens.Top(pos, screen, true);
+            if (ns == null && ns == screen)
                 return;
             window.SetPosition(
                     (window.X - screen.X) * ns.Width / screen.Width + ns.X,
@@ -826,30 +804,8 @@ namespace MIMP.WIMP.WPF
                 return;
             var pos = window.GetPosition();
             var screen = window.Screen;
-            var size = screen.GetWorkArea();
-            var ns = screen;
-            var d = int.MaxValue;
-            foreach (var s in _app.Screens)
-            {
-                if (s == screen)
-                    continue;
-                var sz = s.GetWorkArea();
-                if (size.Right != sz.Left)
-                    continue;
-                var nd = 0;
-                if (pos.Top < sz.Top)
-                    nd += sz.Top - pos.Top;
-                if (pos.Bottom > sz.Bottom)
-                    nd += pos.Bottom - sz.Bottom;
-                if (nd < d)
-                {
-                    d = nd;
-                    ns = s;
-                }
-                if (nd == 0)
-                    break;
-            }
-            if (ns == screen)
+            var ns = _app.Screens.Right(pos, screen, true);
+            if (ns == null && ns == screen)
                 return;
             window.SetPosition(
                     (window.X - screen.X) * ns.Width / screen.Width + ns.X,
@@ -866,30 +822,8 @@ namespace MIMP.WIMP.WPF
                 return;
             var pos = window.GetPosition();
             var screen = window.Screen;
-            var size = screen.GetWorkArea();
-            var ns = screen;
-            var d = int.MaxValue;
-            foreach (var s in _app.Screens)
-            {
-                if (s == screen)
-                    continue;
-                var sz = s.GetWorkArea();
-                if (size.Bottom != sz.Top)
-                    continue;
-                var nd = 0;
-                if (pos.Left < sz.Left)
-                    nd += sz.Left - pos.Left;
-                if (pos.Right > sz.Right)
-                    nd += pos.Right - sz.Right;
-                if (nd < d)
-                {
-                    d = nd;
-                    ns = s;
-                }
-                if (nd == 0)
-                    break;
-            }
-            if (ns == screen)
+            var ns = _app.Screens.Down(pos, screen, true);
+            if (ns == null && ns == screen)
                 return;
             window.SetPosition(
                     (window.X - screen.X) * ns.Width / screen.Width + ns.X,
@@ -906,30 +840,8 @@ namespace MIMP.WIMP.WPF
                 return;
             var pos = window.GetPosition();
             var screen = window.Screen;
-            var size = screen.GetWorkArea();
-            var ns = screen;
-            var d = int.MaxValue;
-            foreach (var s in _app.Screens)
-            {
-                if (s == screen)
-                    continue;
-                var sz = s.GetWorkArea();
-                if (size.Left != sz.Right)
-                    continue;
-                var nd = 0;
-                if (pos.Top < sz.Top)
-                    nd += sz.Top - pos.Top;
-                if (pos.Bottom > sz.Bottom)
-                    nd += pos.Bottom - sz.Bottom;
-                if (nd < d)
-                {
-                    d = nd;
-                    ns = s;
-                }
-                if (nd == 0)
-                    break;
-            }
-            if (ns == screen)
+            var ns = _app.Screens.Left(pos, screen, true);
+            if (ns == null && ns == screen)
                 return;
             window.SetPosition(
                     (window.X - screen.X) * ns.Width / screen.Width + ns.X,

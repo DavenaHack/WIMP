@@ -9,6 +9,7 @@
     <Company>Mimp</Company>
     <Product>WIMP</Product>
     <AssemblyName>WIMP</AssemblyName>
+    <Version>0.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
