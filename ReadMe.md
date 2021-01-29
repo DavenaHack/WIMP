@@ -1,4 +1,7 @@
-TODO Description and examples/pics
+TODO Description and examples/pics/video
+
+# Enviroments
+ - Windows 10
 
 # Shortcuts
 

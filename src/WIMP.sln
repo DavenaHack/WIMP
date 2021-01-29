@@ -56,14 +56,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solutio
 		icon.ico = icon.ico
 		icon.png = icon.png
 		icon.svg = icon.svg
-		ReadMe.md = ReadMe.md
+		..\LICENSE = ..\LICENSE
+		..\ReadMe.md = ..\ReadMe.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MIMP.Log", "MIMP.Log\MIMP.Log.csproj", "{1639FA75-E20D-494D-8681-B18D2AE30CD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MIMP.SeeSharper", "MIMP.SeeSharper\MIMP.SeeSharper.csproj", "{94CD8DA6-7BB8-43F7-B78D-235BB2D53EA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIMP.SeeSharper.Events", "MIMP.SeeSharper.Events\MIMP.SeeSharper.Events.csproj", "{FC6A97DD-2D11-420B-814F-B5178D0BFFC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MIMP.SeeSharper.Events", "MIMP.SeeSharper.Events\MIMP.SeeSharper.Events.csproj", "{FC6A97DD-2D11-420B-814F-B5178D0BFFC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

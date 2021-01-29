@@ -339,5 +339,5 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 
-# Allow
-!Mimp.Log/
+#Allow
+!/release/
